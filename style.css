@@ -1,0 +1,111 @@
+body {
+    background-color: #E0E1DD;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1B263B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+header {
+    background-color: #778DA9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.barra h1 {
+    color: #E0E1DD;
+    margin: 0;
+    font-size: 24px;
+}
+
+.content {
+    background-color: #415A77;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    color: #E0E1DD;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E0E1DD;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    color: #E0E1DD;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #778DA9;
+    color: #E0E1DD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #415A77;
+}
+
+.salida {
+    background-color: #415A77;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+}
